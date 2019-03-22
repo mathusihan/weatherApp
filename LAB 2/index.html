@@ -1,0 +1,145 @@
+<HTML>
+
+    <head>
+        <link rel = "stylesheet"
+           type = "text/css"
+           href = "myStyle.css"/>
+           <meta charset="UTF-8">
+        </head>
+        
+<body style="background: black;">
+
+    <video autoplay muted loop id="myVideo">
+        <source id="vid" src="clouds.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <header>                           
+   
+            <input id="cityinput" type="text"  placeholder="City">
+            <button onclick="onclick1()" >Search</button>
+       
+    </header>
+
+<br>
+
+<div class="maincontainer"> 
+    <div id="halfoffull"class="c3" style="height: 50%;">
+        
+            <h1>Today</h1>
+      
+    <figure > <img id="mainpic" src="Cloudy.png"  alt="Trulli" style="width:25%; height: 35%;">
+        <figcaption id="maincaption">Its cloudy</figcaption></figure>
+
+        <h1 id="maintemp" style="border: none">15 degrees</h1>
+
+        <br>
+<div class="c3" style="float: left;">         
+<p id="mainwind">Wind: </p>
+<p id="mainpressure">Humidity: </p>
+</div>
+<div class="c3" style="float: right;">         
+    <p id="mainhumidity">Preassure: </p>
+    <label class="switch">
+            <input id="tempslider" type="checkbox">
+            <span onclick="changeTemp()" class="slider"></span>
+          </label>
+    </div>
+
+    <br><br> <br>
+    <div id="hourly" class="c4">
+   <h1 style="margin-top: 30px;">Hourly Forecast</h1>
+   <br>
+   <div id="nexhours" class="c5">
+    <p> Within 3 hours </p>
+    <p id="next3hour"> 2 </p>
+   </div>
+   <div id="nexhours" class="c5">
+    <p>  Within 6 hours </p>
+    <p id="next6hour"> Within 6 hours2</p>
+</div>
+<div id="nexhour" class="c5" >
+    <p  > Within 9 hours</p>
+    <p id="next9hour"> 2 </p>
+</div>
+    </div>
+
+
+</div>    
+
+<div class="vl"></div>
+
+<div class="c1">
+<div  id="secondweth" clss="c4" style="border-bottom: 1px solid white">
+    <div id="nextdiv" class="c3">
+        <h1 class="secondheader" id="nextdaytext">Next Day</h1>
+            <figure> <img id="nextdaypic" src="Cloudy.png" alt="Trulli" style="width:40%" id="nextdaypic">
+                <figcaption id="nextdaycap">Its cloudy</figcaption></figure>
+        
+                <p id="nextdaytemp"> 5 degrees</p>
+                <p id="nextdaywind"> 5 degrees</p>
+                <p id="nextdayper"> 5 degrees</p>
+    </div>
+    <div class="c3">
+        <h1 class="secondheader" id="2daytext">Next Day</h1>
+        <figure> <img id="twodaypic" src="Cloudy.png" alt="Trulli" style="width:40%" id="twodaypic">
+            <figcaption id="twodaycap">Its cloudy</figcaption></figure>
+    
+            <p id="twodaytemp"> 5 degrees</p>
+            <p id="twodaywind"> 5 degrees</p>
+            <p id="twodayper"> 5 degrees</p>
+           
+        </div>
+        <br>
+</div>
+<br>
+
+<div  class="c4">
+        <div class="c5">
+                <h1 class="secondheader" id="3daytext">Next Day</h1>
+            <figure> <img id="3daypic" src="Cloudy.png" alt="Trulli" style="width:40%" id="3daypic">
+                <figcaption id="3daycap">Its cloudy</figcaption></figure>
+        
+                <p id="3daytemp"> 5 degrees</p>
+                <p id="3daywind"> 5 degrees</p>
+                <p id="3dayper"> 5 degrees</p>
+            </div>
+            <div class="c5">
+                <h1 class="secondheader" id="4daytext">Next Day</h1>
+                <figure> <img id="4daypic" src="Cloudy.png" alt="Trulli" style="width:40%" id="4daypic">
+                    <figcaption id="4daycap">Its cloudy</figcaption></figure>
+            
+                    <p id="4daytemp"> 5 degrees</p>
+                    <p id="4daywind"> 5 degrees</p>
+                    <p id="4dayper"> 5 degrees</p>
+                </div>
+                <div class="c3" style="width: 32%">
+                    <h1 class="secondheader" id="5daytext">Next Day</h1>
+                    <figure> <img id="5daypic" src="Cloudy.png" alt="Trulli" style="width:40%" id="5daypic">
+                        <figcaption id="5daycap" id="Hourly">Its cloudy</figcaption></figure>
+                
+                        <p id="5daytemp"> 5 degrees</p>
+                        <p id="5daywind"> 5 degrees</p>
+                        <p id="5dayper"> 5 degrees</p>
+                    </div>
+</div>
+
+
+</div>
+
+
+
+</div>  <!-- main container> -->
+
+
+
+<footer>
+    
+    <script type="text/javascript" src="script.js"> </script>
+</footer>
+
+
+
+</body>
+
+</HTML>
